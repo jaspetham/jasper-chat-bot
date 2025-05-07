@@ -59,7 +59,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="h-screen w-screen flex flex-col bg-gradient-to-b from-gray-900 to-indigo-900 text-gray-300">
+  <div class="h-dvh w-screen flex flex-col bg-gradient-to-b from-gray-900 to-indigo-900 text-gray-300">
     <div class="bg-gradient-to-r from-purple-800 to-blue-800 text-white p-4 shadow-md flex items-center justify-center">
       <h1 class="text-xl font-semibold">Jasper Gemini Chat</h1>
     </div>
