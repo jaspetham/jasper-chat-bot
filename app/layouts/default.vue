@@ -1,10 +1,8 @@
 <script setup lang="ts"></script>
 <template>
-  <main class="h-dvh bg-black text-white font-noto">
+  <main class="h-dvh w-full bg-black text-white font-noto">
     <NuxtLoadingIndicator />
-    <div class="container">
       <slot />
-    </div>
   </main>
 </template>
 
