@@ -37,7 +37,6 @@ export default defineEventHandler(async (event) => {
       contents: userMessage,
       history: history,
       config: {
-        maxOutputTokens: 1500,
         temperature: 0.9,
       },
     });
