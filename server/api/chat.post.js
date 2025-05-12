@@ -5,9 +5,9 @@ import { GoogleGenAI } from "@google/genai";
 
 export default defineEventHandler(async (event) => {
   const config = useRuntimeConfig(event);
-  const apiKey = config.apiKey;
+  const apiKey = config.private.apiKey;
   const ai = new GoogleGenAI({ apiKey });
-  const selectedModel = "gemini-2.5-pro-exp-03-25";
+  const selectedModel = "gemini-2.0-flash-001";
   if (!apiKey) {
     // Set HTTP status code for the error
     setResponseStatus(event, 500);

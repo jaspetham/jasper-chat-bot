@@ -46,6 +46,11 @@ export default defineNuxtConfig({
     plugins: [tailwindcss()],
   },
   runtimeConfig: {
-    apiKey: process.env.GEMINI_API_KEY,
+    public: {
+      apiUrl: process.env.API_URL || "https://default-api-url.com", // Fallback for public variable
+    },
+    private: {
+      apiKey: process.env.GEMINI_API_KEY, // Ensure private key is used only on the server
+    },
   },
 });
